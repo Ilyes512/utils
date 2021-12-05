@@ -2,10 +2,13 @@
 
 A minimal Alpine based image with:
 
-- bash
+- bash (set as default shell for root user)
 - curl
+- wget
 - jq
+- yq
 - sed
+- pcre-tools
 
 ## Task
 

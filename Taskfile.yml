@@ -6,7 +6,6 @@ vars:
   DOCKER_REPO: ghcr.io
   DOCKER_OWNER: ilyes512
   DOCKER_IMAGE_NAME: utils
-
   HADOLINT_TAG_VERSION: v2.8.0
 
 tasks:
@@ -35,4 +34,5 @@ tasks:
       - docker run
         --interactive
         --tty
+        --rm
         {{.DOCKER_REPO}}/{{.DOCKER_OWNER}}/{{.DOCKER_IMAGE_NAME}}:latest
