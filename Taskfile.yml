@@ -8,6 +8,11 @@ vars:
   DOCKER_IMAGE_NAME: utils
   HADOLINT_TAG_VERSION: v2.8.0
 
+includes:
+  act:
+    taskfile: ./act/Taskfile.yml
+    dir: ./act
+
 tasks:
   build:
     desc: Build the vscode-golang image

@@ -1,0 +1,9 @@
+version: "3"
+
+silent: true
+
+tasks:
+  pr:
+    desc: Run Act with pull_request event
+    cmds:
+      - act --directory .. --eventpath act/pull_request.json pull_request
