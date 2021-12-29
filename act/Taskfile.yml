@@ -5,5 +5,8 @@ silent: true
 tasks:
   pr:
     desc: Run Act with pull_request event
+    preconditions:
+      - sh: act --version
+        msg: "You need to install Act to run this task. See https://github.com/nektos/act for more info."
     cmds:
       - act --directory .. --eventpath act/pull_request.json pull_request
