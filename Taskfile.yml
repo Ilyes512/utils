@@ -14,6 +14,7 @@ includes:
     dir: ./act
 
 tasks:
+
   build:
     desc: Build the vscode-golang image
     cmds:
