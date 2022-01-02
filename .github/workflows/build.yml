@@ -2,23 +2,21 @@ name: Build Image
 
 on:
   push:
-    branches:
-      - master
-    tags:
-      - '*'
+    branches: [master]
+    tags: ['*']
   pull_request:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
   build:
     name: Build Image
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Debug action
         uses: hmarr/debug-action@v2
+      - uses: hadolint/hadolint-action@v1.6.0
       - name: Image name
         id: image_name
         uses: ASzc/change-string-case-action@v2
