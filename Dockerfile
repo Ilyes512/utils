@@ -1,4 +1,4 @@
-FROM alpine:3.15.0
+FROM alpine:3.15.1
 
 RUN apk add --no-cache --upgrade --no-progress \
         bash~=5.1 \
