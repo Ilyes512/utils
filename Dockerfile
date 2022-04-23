@@ -1,3 +1,4 @@
+# Latest version of Alpine image: https://hub.docker.com/_/alpine?tab=tags
 FROM alpine:3.15.4
 
 RUN apk add --no-cache --upgrade --no-progress \
