@@ -27,6 +27,12 @@ Available tasks for this project:
 * shell:        Interactive shell
 ```
 
+## Misc
+
+```bash
+apk list -i # display installed packages and it's version
+```
+
 ### Act tasks
 
 [Act](https://github.com/nektos/act) is a tool to run Github Actions locally. Before you can run Act and the
