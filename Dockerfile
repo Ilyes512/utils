@@ -8,6 +8,7 @@ RUN apk add --no-cache --upgrade --no-progress \
         yq~=4.14 \
         sed~=4.8 \
         pcre-tools~=8.45 \
+        openssh-keygen~=8.8 \
     && apk add --no-cache --upgrade --no-progress --virtual .usermod \
         shadow~=4.8 \
     && usermod --shell /bin/bash root \

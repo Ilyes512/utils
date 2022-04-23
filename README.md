@@ -9,6 +9,7 @@ A minimal Alpine based image with:
 - yq
 - sed
 - pcre-tools
+- ssh-keygen
 
 ## Task
 
