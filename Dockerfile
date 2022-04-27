@@ -13,6 +13,7 @@ RUN apk add --no-cache --upgrade --no-progress \
     && apk add --no-cache --upgrade --no-progress --virtual .usermod \
         shadow~=4.8 \
     && usermod --shell /bin/bash root \
+    && for i in $(seq 500 1999); do echo "user:x:$i:$i::/home:/sbin/nologin"; done >> /etc/passwd \
     && apk del .usermod
 
 CMD ["/bin/bash"]
