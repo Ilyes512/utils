@@ -2,6 +2,8 @@
 
 A minimal Alpine based image with:
 
+[![Build Images](https://github.com/Ilyes512/utils/actions/workflows/build.yml/badge.svg)](https://github.com/Ilyes512/utils/actions/workflows/build.yml)
+
 - bash (set as default shell for root user)
 - curl
 - wget
