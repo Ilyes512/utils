@@ -19,12 +19,12 @@ This project uses [Task](https://taskfile.dev) (an task runner / build tool). If
 Available tasks for this project:
 
 ```
-* act:master:   Run Act with push event on master branch
-* act:pr:       Run Act with pull_request event
-* act:tag:      Run Act with tag (push) event
-* build:        Build the vscode-golang image
-* lint:         Apply a Dockerfile linter (https://github.com/hadolint/hadolint)
-* shell:        Interactive shell
+* build:          Build all PHP Docker image targets
+* lint:           Apply a Dockerfile linter (https://github.com/hadolint/hadolint)
+* shell:          Interactive shell
+* act:main:       Run Act with push event on main branch
+* act:pr:         Run Act with pull_request event
+* act:tag:        Run Act with tag (push) event
 ```
 
 ## Misc
@@ -47,3 +47,5 @@ File path: `~/.actrc`
 Replace `<your_github_token>` with a Github personal acces token. You can generate a new token
 [here](https://github.com/settings/tokens/new?description=Act) (no scopes
 are needed!).
+
+Note: Does not (yet) work for Apple devices using Apple Silicon (i.e. M1).
