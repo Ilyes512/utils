@@ -17,7 +17,7 @@ includes:
 tasks:
 
   build:
-    desc: Build the vscode-golang image
+    desc: Build the Utils image
     deps: [lint]
     cmds:
       - docker build

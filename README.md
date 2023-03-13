@@ -21,7 +21,7 @@ This project uses [Task](https://taskfile.dev) (an task runner / build tool). If
 Available tasks for this project:
 
 ```
-* build:          Build all PHP Docker image targets
+* build:          Build the Utils image
 * lint:           Apply a Dockerfile linter (https://github.com/hadolint/hadolint)
 * shell:          Interactive shell
 * act:main:       Run Act with push event on main branch
