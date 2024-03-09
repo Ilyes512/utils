@@ -23,4 +23,5 @@ Available tasks for this project:
 * build:               Build the Utils image
 * lint:                Apply a Dockerfile linter (https://github.com/hadolint/hadolint)
 * shell:               Interactive shell
+* list:packages:       List all installed packages
 ```
