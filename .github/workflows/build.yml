@@ -70,6 +70,7 @@ jobs:
           context: .
           platforms: ${{ inputs.platform }}
           labels: ${{ steps.meta.outputs.labels }}
+          provenance: false
           outputs: type=image,name=${{ steps.image_name.outputs.lowercase }},push-by-digest=true,name-canonical=true
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
