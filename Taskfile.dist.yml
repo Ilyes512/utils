@@ -9,11 +9,6 @@ vars:
   # Latatest version of Hadolint: https://hub.docker.com/r/hadolint/hadolint/tags or https://github.com/hadolint/hadolint/releases
   HADOLINT_TAG_VERSION: v2.12.0
 
-includes:
-  act:
-    taskfile: ./act
-    dir: ./act
-
 tasks:
 
   build:
@@ -44,3 +39,9 @@ tasks:
         --tty
         --rm
         {{.DOCKER_REPO}}/{{.DOCKER_OWNER}}/{{.DOCKER_IMAGE_NAME}}:latest
+
+  list:packages:
+    desc: List all installed packages
+    deps: [build]
+    cmds:
+      - docker run --rm {{.DOCKER_REPO}}/{{.DOCKER_OWNER}}/{{.DOCKER_IMAGE_NAME}}:latest apk list -I
