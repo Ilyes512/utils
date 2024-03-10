@@ -1,6 +1,6 @@
 # Docker Utils
 
-[![Build Images](https://github.com/Ilyes512/utils/actions/workflows/build.yml/badge.svg)](https://github.com/Ilyes512/utils/actions/workflows/build.yml)
+[![Build Images](https://github.com/Ilyes512/utils/actions/workflows/main.yml/badge.svg)](https://github.com/Ilyes512/utils/actions/workflows/main.yml)
 
 A minimal Alpine based image with:
 
