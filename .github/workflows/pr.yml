@@ -9,7 +9,7 @@ concurrency:
 
 jobs:
   build:
-    uses: ./.github/workflows/build.yml
+    uses: Ilyes512/github-actions/.github/workflows/build.yml@0.1.0
     strategy:
       fail-fast: false
       matrix:
@@ -25,7 +25,7 @@ jobs:
         ${{ matrix.os }}-buildx-${{ matrix.platform }}-main-
 
   merge:
-    uses: ./.github/workflows/merge.yml
+    uses: Ilyes512/github-actions/.github/workflows/merge.yml@0.1.0
     needs: build
     with:
       runner-os: ubuntu-22.04
