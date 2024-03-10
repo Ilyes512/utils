@@ -14,10 +14,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: ['linux/amd64', 'linux/arm64']
-        os: ['ubuntu-22.04']
+        platform:
+          - linux/amd64
+          - linux/arm64
     with:
-      runner-os: ${{ matrix.os }}
+      runner-os: ubuntu-22.04
       platform: ${{ matrix.platform }}
       cache-key: ${{ matrix.os }}-buildx-${{ matrix.platform }}-${{ github.ref_name }}-${{ github.sha }}
       cache-restore-keys: |
@@ -29,4 +30,5 @@ jobs:
     uses: Ilyes512/github-actions/.github/workflows/merge.yml@php-workflows
     needs: build
     with:
+      image-name: ghcr.io/${{ github.repository }}
       runner-os: ubuntu-22.04
