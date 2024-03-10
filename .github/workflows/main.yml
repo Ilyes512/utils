@@ -27,7 +27,7 @@ jobs:
         ${{ matrix.os }}-buildx-${{ matrix.platform }}-
 
   merge:
-    uses: Ilyes512/github-actions/.github/workflows/merge.yml@@php-workflows
+    uses: Ilyes512/github-actions/.github/workflows/merge.yml@php-workflows
     needs: build
     with:
       image-name: ghcr.io/${{ github.repository }}
