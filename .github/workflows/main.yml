@@ -26,6 +26,7 @@ jobs:
 
   merge:
     uses: Ilyes512/github-actions/.github/workflows/merge.yml@@php-workflows
+    needs: build
     with:
       image-name: ghcr.io/${{ github.repository }}
       runner-os: ubuntu-22.04
