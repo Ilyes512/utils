@@ -19,6 +19,7 @@ jobs:
     with:
       runner-os: ubuntu-22.04
       platform: ${{ matrix.platform }}
+      image-name: ghcr.io/${{ github.repository }}
       cache-key: ${{ matrix.os }}-buildx-${{ matrix.platform }}-pr-${{ github.event.number }}-${{ github.sha }}
       cache-restore-keys: |
         ${{ matrix.os }}-buildx-${{ matrix.platform }}-pr-${{ github.event.number }}-
