@@ -18,7 +18,7 @@ jobs:
           - linux/amd64
           - linux/arm64
     with:
-      runner-os: ubuntu-22.04
+      runner-os: ubuntu-24.04
       platform: ${{ matrix.platform }}
       image-name: ghcr.io/${{ github.repository }}
       cache-key: ${{ matrix.os }}-buildx-${{ matrix.platform }}-${{ github.ref_name }}-${{ github.sha }}
@@ -31,4 +31,4 @@ jobs:
     needs: build
     with:
       image-name: ghcr.io/${{ github.repository }}
-      runner-os: ubuntu-22.04
+      runner-os: ubuntu-24.04
