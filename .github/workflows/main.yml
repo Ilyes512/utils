@@ -34,8 +34,8 @@ jobs:
       image-name: ghcr.io/${{ github.repository }}
       cache-key: ${{ matrix.os }}-buildx-${{ matrix.platform }}-${{ github.ref_name }}-${{ github.sha }}
       cache-restore-keys: |
-        ${{ matrix.os }}-buildx-${{ matrix.platform }}-${{ github.ref_name }}-
-        ${{ matrix.os }}-buildx-${{ matrix.platform }}-
+        ${{ matrix.runner-os }}-buildx-${{ matrix.platform }}-${{ github.ref_name }}-
+        ${{ matrix.runner-os }}-buildx-${{ matrix.platform }}-
 
   merge:
     uses: Ilyes512/github-actions/.github/workflows/merge.yml@0.2.2
