@@ -24,6 +24,7 @@ jobs:
         uses: hadolint/hadolint-action@v3.1.0
 
   build:
+    name: Build
     uses: Ilyes512/github-actions/.github/workflows/build.yml@1.0.3
     needs: linting
     strategy:
@@ -40,6 +41,7 @@ jobs:
       image-name: ghcr.io/${{ github.repository }}
 
   merge:
+    name: Merge
     uses: Ilyes512/github-actions/.github/workflows/merge.yml@1.0.3
     needs: build
     with:
