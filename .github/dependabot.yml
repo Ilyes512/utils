@@ -14,16 +14,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    ignore:
-      - dependency-name: "alpine patch"
-        update-types: ["version-update:semver-major", "version-update:semver-minor"]
     labels:
       - dependencies
       - docker
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    ignore:
-      - dependency-name: "alpine minor"
-        update-types: ["version-update:semver-major", "version-update:semver-patch"]
