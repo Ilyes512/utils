@@ -12,6 +12,8 @@ A minimal Alpine based image with:
 - sed
 - pcre-tools
 - ssh-keygen
+- gnupg
+- pass
 
 ## Task
 
