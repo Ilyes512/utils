@@ -1,6 +1,6 @@
 # Docker Utils
 
-[![Build Images](https://github.com/Ilyes512/utils/actions/workflows/main.yml/badge.svg)](https://github.com/Ilyes512/utils/actions/workflows/main.yml)
+[![Build Images](https://github.com/ilyes512/utils/actions/workflows/main.yml/badge.svg)](https://github.com/ilyes512/utils/actions/workflows/main.yml)
 
 A minimal Alpine based image with:
 
@@ -12,6 +12,8 @@ A minimal Alpine based image with:
 - sed
 - pcre-tools
 - ssh-keygen
+- gnupg
+- pass
 
 ## Task
 
